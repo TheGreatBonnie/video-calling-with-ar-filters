@@ -16,42 +16,26 @@
     <script src="https://cdn.jsdelivr.net/npm/deepar/js/deepar.js"></script>
   </head>
   <body>
-    <div class="dyte-meeting" id="dyteMeeting">
-      <dyte-meeting-title
-        id="meetingTitle"
-        style="text-align: center"></dyte-meeting-title>
-
-      <dyte-grid id="dyteGrid" style="height: 650px"></dyte-grid>
-      <div class="controlbar">
-        <dyte-controlbar size="xl" id="dyteControlbar">
-          <dyte-mic-toggle id="dyteMicToggle"></dyte-mic-toggle>
-          <dyte-camera-toggle id="dyteCameraToggle"></dyte-camera-toggle>
-          <dyte-settings-toggle id="dyteSettingsToggle"></dyte-settings-toggle>
-          <dyte-controlbar-button
-            label="+/-AR Filter"
-            icon="😎"
-            size="lg"
-            id="arFilter"
-            style="background-color: black; color: white">
-          </dyte-controlbar-button>
-          <dyte-controlbar-button
-            label="Change ARFilter"
-            icon="🔄"
-            size="lg"
-            id="switchFilter"
-            style="background-color: black; color: white">
-          </dyte-controlbar-button>
-          <dyte-leave-button id="dyteLeaveButton"></dyte-leave-button>
-        </dyte-controlbar>
+    <div class="main">
+      <dyte-meeting id="my-meeting"></dyte-meeting>
+      <div class="controlbar" id="controlbar">
+        <dyte-controlbar-button
+          class="btn"
+          label="+/-AR Filter"
+          icon="😎"
+          size="lg"
+          id="arFilter"
+          style="background-color: #151515; color: white">
+        </dyte-controlbar-button>
+        <dyte-controlbar-button
+          label="Change ARFilter"
+          icon="🔄"
+          size="lg"
+          id="switchFilter"
+          style="background-color: #151515; color: white">
+        </dyte-controlbar-button>
       </div>
     </div>
-    <dyte-ended-screen
-      id="dyteEndedScreen"
-      style="
-        height: 100%;
-        display: none;
-        background-color: black;
-      "></dyte-ended-screen>
 
     <script src="/main.js"></script>
   </body>
